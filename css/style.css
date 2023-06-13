@@ -10,12 +10,9 @@ html {
 }
 
 .sec-1 {
- 
-  background-image: url("../images/Banner-bg.jpg"),url("../images/bg2.png");
-  background-repeat: no-repeat,no-repeat;
-  background-size: 100% 90% ,100%;
-  
-
+  background-image: url("../images/Banner-bg.jpg"), url("../images/bg2.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 90%, 100%;
 }
 
 .container {
@@ -28,7 +25,7 @@ nav {
 nav div {
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
 }
 
 nav div h1 span:first-child {
@@ -89,20 +86,45 @@ input:checked + dialog {
 /*header*/
 .head {
   color: #fff;
+
 }
-article.head div aside{
-  width: 30%;
-}
+
 article.head h3:nth-child(2) {
   color: orange;
 }
 
-button {
+.head aside{
+ margin: auto 5px;
+
+}
+
+.head img{
+  width: 100%;
+  height: 100%;
+  margin:auto auto;
+}
+
+.button {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  margin-top: 5px;
-  padding: 10px;
+
+  padding: 5px;
+  border: #fff solid 1px;
 }
+.imghead{
+  position: relative;
+}
+#imgfoot{
+  width: 100%;
+  height: 24%;
+  padding: 10px;
+position:absolute;
+bottom: 0;
+background-color: rgba(0, 0, 0, 0.7);
+display:flex;
+justify-content: space-between;
+}
+
 /*finish header*/
 
 @media (min-width: 576px) {
@@ -114,9 +136,20 @@ button {
     margin-left: auto;
     margin-right: auto;
   }
+  .head img{
+    width: 500px;
+    height: 400px;
+    margin-top:auto;
+  }
 }
 
 @media (min-width: 992px) {
+  .head img{
+    width: 450px;
+    height: 300px;
+    margin-top:auto;
+  
+  }
   .container {
     width: 940px;
   }
@@ -125,6 +158,23 @@ button {
   }
   .list2 {
     display: inline;
+  }
+  article.head  aside {
+
+    width:30%;
+  }
+  nav div{
+    justify-content: space-around;
+  }
+  .head {
+   
+    display: flex ;
+    justify-content:center;
+    flex-basis: content;
+   
+  }
+  #imgfoot {
+height: 20%;
   }
 }
 

@@ -1,3 +1,10 @@
+:root {
+  --color-orang: #ff9000;
+  --text-color: #979797;
+  --dark: #000;
+  --light: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +14,13 @@
 html {
   font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.0001em;
 }
+
+.container {
+  padding: 15px;
+}
+/*sec-1*/
 
 .sec-1 {
   background-image: url("../images/Banner-bg.jpg"), url("../images/bg2.png");
@@ -15,31 +28,28 @@ html {
   background-size: 100% 90%, 100%;
 }
 
-.container {
-  padding: 15px;
-}
 /*nav*/
 nav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 nav div {
-  color: #fff;
+  color: var(--light);
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 nav div h1 span:first-child {
-  color: orange;
+  color: var(--color-orang);
 }
 
 /*test*/
 nav div label {
   padding: 10px;
-  border: 1px solid rgb(236, 192, 1);
+  border: 1px solid var(--color-orang);
 }
 
 nav div label:active {
-  background-color: rgb(236, 192, 1);
+  background-color: var(--color-orang);
 }
 
 dialog div {
@@ -50,7 +60,7 @@ dialog div {
 
 dialog div a {
   text-decoration: none;
-  color: #fff;
+  color: var(--light);
 }
 
 #check {
@@ -59,7 +69,7 @@ dialog div a {
 dialog {
   display: none;
   width: 140px;
-  border: 1px solid rgb(236, 192, 1);
+  border: 1px solid var(--color-orang);
   position: fixed;
   left: 60%;
   top: 10%;
@@ -74,58 +84,128 @@ input:checked + dialog {
 .list2 a {
   padding: 15px;
   text-decoration: none;
-  color: #fff;
+  color: var(--light);
 }
 
 .list2 a:hover {
   background-color: #314c6b;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid var(--color-orang);
 }
 /*finish nav*/
 
 /*header*/
 .head {
-  color: #fff;
-
+  color: var(--light);
 }
 
 article.head h3:nth-child(2) {
-  color: orange;
+  color: var(--color-orang);
 }
 
-.head aside{
- margin: auto 5px;
-
+.head aside {
+  margin: auto 5px;
 }
 
-.head img{
+.head img {
   width: 100%;
   height: 100%;
-  margin:auto auto;
+  margin: auto auto;
 }
 
 .button {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: var(--light);
 
   padding: 5px;
-  border: #fff solid 1px;
+  border: var(--light) solid 1px;
 }
-.imghead{
+.imghead {
   position: relative;
 }
-#imgfoot{
+#imgfoot {
   width: 100%;
   height: 24%;
   padding: 10px;
-position:absolute;
-bottom: 0;
-background-color: rgba(0, 0, 0, 0.7);
-display:flex;
-justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-between;
 }
 
+i {
+  border: 1px solid var(--light);
+  border-radius: 50%;
+  padding: 5px;
+}
+.Spanned {
+  color: var(--color-orang);
+  position: absolute;
+  top: 40%;
+  right: 4%;
+}
 /*finish header*/
+
+/*sec-2*/
+.sec-2 {
+  background-color: var(--light);
+}
+
+.sec-2 .center {
+  text-align: center;
+}
+.sec-2 p {
+  color: var(--text-color);
+}
+hr {
+  width: 200px;
+  margin: 15px auto;
+  height: 2px;
+  background-color: var(--color-orang);
+  border-color: var(--color-orang);
+  margin-bottom: 50px;
+}
+#btn-about {
+  width: 300px;
+
+  border: 1px solid;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.sec-2 a {
+  text-decoration: none;
+  color: var(--text-color);
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  border-left : thin solid;
+}
+.sec-2 a:hover {
+  background-color: var(--color-orang);
+  color: var(--dark);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.about-flex{
+  margin-top: 20px;
+}
+.sec-2 h5{
+  color: var(--color-orang);
+}
+.sec-2 img{
+  border:thin #979797 solid;
+margin-right: 20px;
+  padding: 5px;
+}
+.about-flex p{
+  margin-top: 15px;
+}
+/*finish sec-2*/
+
+/*sec-3*/
+
+/*finish sec-3*/
+
 
 @media (min-width: 576px) {
 }
@@ -136,19 +216,24 @@ justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
   }
-  .head img{
+  .head img {
     width: 500px;
     height: 400px;
-    margin-top:auto;
+    margin-top: auto;
+  }
+  @media (max-width: 991.5px) {
+    #imgfoot {
+      height: 20%;
+      width: 72.5%;
+    }
   }
 }
 
 @media (min-width: 992px) {
-  .head img{
+  .head img {
     width: 450px;
     height: 300px;
-    margin-top:auto;
-  
+    margin-top: auto;
   }
   .container {
     width: 940px;
@@ -159,22 +244,28 @@ justify-content: space-between;
   .list2 {
     display: inline;
   }
-  article.head  aside {
-
-    width:30%;
+  article.head aside {
+    width: 30%;
   }
-  nav div{
+  nav div {
     justify-content: space-around;
   }
   .head {
-   
-    display: flex ;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     flex-basis: content;
-   
   }
   #imgfoot {
-height: 20%;
+    height: 20%;
+  }
+
+  .About-us {
+    margin: auto 10rem;
+  }
+
+  .about-flex{
+display: flex;
+justify-content: space-around;
   }
 }
 

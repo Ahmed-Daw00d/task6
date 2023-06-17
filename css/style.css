@@ -18,7 +18,7 @@ html {
 }
 
 .container {
-  padding: 15px;
+  padding: 15px 15px;
 }
 /*sec-1*/
 
@@ -164,6 +164,7 @@ hr {
   background-color: var(--color-orang);
   border-color: var(--color-orang);
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 #btn-about {
   width: 300px;
@@ -179,33 +180,74 @@ hr {
   width: 100px;
   padding: 10px 0;
   text-align: center;
-  border-left : thin solid;
+  border-left: thin solid;
 }
 .sec-2 a:hover {
   background-color: var(--color-orang);
   color: var(--dark);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.about-flex{
+.about-flex {
   margin-top: 20px;
 }
-.sec-2 h5{
+.sec-2 h5 {
   color: var(--color-orang);
 }
-.sec-2 img{
-  border:thin #979797 solid;
-margin-right: 20px;
+.sec-2 img {
+  border: thin #979797 solid;
+  margin: auto 0px;
+  height: 100%;
   padding: 5px;
+  width: 360px;
 }
-.about-flex p{
+.about-flex p {
   margin-top: 15px;
 }
 /*finish sec-2*/
 
 /*sec-3*/
+.sec-3 {
+  background-image: url("../images/Services-bg.jpg");
+}
+.sec-3 article {
+  padding-top: 20px;
+  text-align: center;
+  color: var(--light);
+}
+
+.sec-3 .parent1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom : 10px;
+  margin-left:2.5px ;
+  margin-right: 2.5px;
+}
+.position1sec3 {
+  position: absolute;
+  padding-top: 60px;
+  text-align: center;
+  color: #009ed8;
+  width: 245px;
+  height: 387px;
+}
+
+.position1sec3:hover {
+  display: none;
+}
+.position2sec3 {
+  position: absolute;
+  padding-top: 60px;
+  text-align: center;
+  color: var(--light);
+  width: 245px;
+  height: 387px;
+  
+}
+
+
 
 /*finish sec-3*/
-
 
 @media (min-width: 576px) {
 }
@@ -259,13 +301,26 @@ margin-right: 20px;
     height: 20%;
   }
 
+  .sec-2 img {
+    margin-right: 20px;
+  }
   .About-us {
     margin: auto 10rem;
   }
 
-  .about-flex{
-display: flex;
-justify-content: space-around;
+  .about-flex {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .sec-3 article {
+    margin: auto 10rem;
+  }
+
+  .flexsec3 {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 10rem;
   }
 }
 

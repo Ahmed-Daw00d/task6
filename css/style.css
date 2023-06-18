@@ -207,7 +207,7 @@ hr {
 
 /*sec-3*/
 .sec-3 {
-  background-image: url("../images/Services-bg.jpg");
+  background: url("../images/Services-bg.jpg") center center/cover no-repeat;
 }
 .sec-3 article {
   padding-top: 20px;
@@ -219,8 +219,8 @@ hr {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom : 10px;
-  margin-left:2.5px ;
+  margin-bottom: 10px;
+  margin-left: 2.5px;
   margin-right: 2.5px;
 }
 .position1sec3 {
@@ -235,6 +235,7 @@ hr {
 .position1sec3:hover {
   display: none;
 }
+
 .position2sec3 {
   position: absolute;
   padding-top: 60px;
@@ -242,12 +243,76 @@ hr {
   color: var(--light);
   width: 245px;
   height: 387px;
+}
+/*finish sec-3*/
+
+/*sec-4*/
+.sec-4 {
+  background-color: #ececec;
   
 }
+.sec-4 article {
+  padding-top: 20px;
+  text-align: center;
+  color: var(--dark);
+  padding-bottom: 40px;
+}
 
+.flexsec4 {
+  background-color: var(--light);
+  display: flex;
+justify-content: space-around;
 
+}
 
-/*finish sec-3*/
+.flex2 {
+  display: flex;
+
+}
+.flexsec4 h5 {
+  background-color: var(--color-orang);
+  width: 50px;
+  
+  padding: 32.5px 0;
+  margin: auto 0px;
+}
+.flexsec4 h4 {
+
+  font-size: x-large;
+  font-weight: 400;
+  background-color: #2d2d2d;
+  padding: 25.5px 30px;
+  margin: auto 0px;
+  color: var(--color-orang);
+}
+
+.flexsec4 small {
+    width: 150px;
+  padding: 20px 0px;
+  text-align: center;
+  margin: auto 0px;
+}
+
+.flexsec4 a{
+ 
+  background-color: #2d2d2d;
+ text-decoration: none;
+ width: 150px;
+  padding: 30.5px 10px;
+  margin: auto 0px;
+  color: var(--light);
+}
+.flexsec4 img{
+  height: 50px;
+  margin: auto;
+}
+@media (max-width: 991.5px) {
+  
+  .flexsec4{
+    flex-wrap: wrap;
+  }
+}
+/*finish sec-4*/
 
 @media (min-width: 576px) {
 }
@@ -267,6 +332,9 @@ hr {
     #imgfoot {
       height: 20%;
       width: 72.5%;
+    }
+    .flexsec4{
+      flex-wrap: wrap;
     }
   }
 }
@@ -320,6 +388,11 @@ hr {
   .flexsec3 {
     display: flex;
     justify-content: space-around;
+    margin: auto 10rem;
+  }
+
+
+  .sec-4 article {
     margin: auto 10rem;
   }
 }

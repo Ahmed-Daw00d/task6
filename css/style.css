@@ -338,7 +338,7 @@ form {
 }
 form input{
   margin-bottom: 10px;
-  width: 350PX;
+  width: 340PX;
   height: 35px;
   padding: 10px;
  
@@ -348,7 +348,7 @@ form input{
 }
 form button{
   margin-bottom: 10px;
-  width: 350PX;
+  width: 340PX;
   height: 35px;
   background-color: var(--color-orang);
 }

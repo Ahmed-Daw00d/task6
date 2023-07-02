@@ -336,42 +336,43 @@ form {
   justify-content: center;
   display: flex;
 }
-form input{
+form input {
   margin-bottom: 10px;
-  width: 340PX;
+  width: 340px;
   height: 35px;
   padding: 10px;
- 
 }
- #message{
-  height: 150px ;
-}
-form button{
+textarea {
+  width: 340px;
+  height: 100px;
   margin-bottom: 10px;
-  width: 340PX;
+  padding: 10px;
+}
+form button {
+  margin-bottom: 10px;
+  width: 340px;
   height: 35px;
   background-color: var(--color-orang);
 }
-.sec-6 article{
+.sec-6 article {
   width: 360px;
   color: var(--light);
 }
-.sec-6 h2{
+.sec-6 h2 {
   color: var(--color-orang);
-  padding-bottom:10px ;
+  padding-bottom: 10px;
 }
-.sec-6 i{
+.sec-6 i {
   border: none;
   margin: auto 0;
   padding-right: 10px;
 }
-.sec-6 .flex3{
+.sec-6 .flex3 {
   display: flex;
-  justify-content:safe;
-  
+  justify-content: safe;
 }
-.flex3 img{
-  padding-right:15px ;
+.flex3 img {
+  padding-right: 15px;
 }
 /*finish sec-6*/
 
